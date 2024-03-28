@@ -1,0 +1,10 @@
+function words(text, str){
+    
+    while( text.includes(str)){
+            text = text.replace(str,'*'.repeat(str.length));
+            console.log(text);
+        }
+    }
+
+
+words('A small sentence with some words', 'small');
